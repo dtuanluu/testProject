@@ -9,8 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>testProject</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <url>http://www.ldt.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -91,10 +90,7 @@
             <version>${gson.version}</version>
         </dependency>
 
-
     </dependencies>
-
-
 
 
     <build>
