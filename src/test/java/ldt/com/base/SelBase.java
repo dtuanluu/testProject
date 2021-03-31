@@ -1,5 +1,6 @@
 package ldt.com.base;
 
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -18,13 +19,6 @@ public class SelBase {
     public static RemoteWebDriver getDriver() {
         return driver;
     }
-
-    public static void goToStartPage() {
-        String startUrl = "https://www.saucedemo.com/";
-        log.info("going to start page. {}", startUrl);
-        driver.get(startUrl);
-    }
-
 
     private static int getScreenMaxUsableHeight() {
         Dimension dimVisibleArea = driver.manage().window().getSize();
@@ -56,9 +50,12 @@ public class SelBase {
 
     }
 
+
+    @AfterClass
     public static void closeDriver() {
         log.info("will close the driver");
         Driver.closeDriver();
         log.info("will close the driver. done");
     }
+
 }

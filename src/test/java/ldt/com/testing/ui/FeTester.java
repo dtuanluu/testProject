@@ -1,4 +1,4 @@
-package ldt.com.tester;
+package ldt.com.testing.ui;
 
 import ldt.com.base.Driver;
 import ldt.com.base.ScreenshotOnFailure;
@@ -26,7 +26,7 @@ public class FeTester extends SelBase {
     @AfterClass
     public static void afterClass() {
         log.info("closing the driver");
-        closeDriver();
+        Driver.closeDriver();
     }
 
 }
